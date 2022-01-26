@@ -15,10 +15,22 @@ console.log (soloPositivos);
 //forEach-every-filter
 //verificar si los elementos de una matriz son positivos
 
-const matriz = [[1,2,3],[4,5,6],[7,8,9]];
+const matriz = [[1,2,3],[4,5,6],[7,8,9], [10,20,40]];
+function matrizSoloPositivos(array){
+   var res = [];
+    array.forEach(element => {
+        res.push (element.every(item =>{
+            return item>0;
+        }));
+    });
+    //console.log(res);
+    return res.every(data => data==true);
+}
+const x = matrizSoloPositivos(matriz);
+if(x)
+console.log ("La matriz tiene valores positivos: ", x);
+else
+console.log ("La matriz tiene valores negativos: ", x);
 
-matriz.forEach(function(item){
-    console.log(item.every(item => item>0))
-});
 
 
