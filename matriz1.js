@@ -9,4 +9,12 @@ const  map1 = matriz1.map(a => a*3);
 const  map2 = matriz2.map(b => b*3);
 const  map3 = matriz3.map(c => c*3); 
 
-    console.log ("El resultado obtenido es:", [map1,map2,map3]);
+    console.log ("El resultado obtenido es :", [map1,map2,map3]);
+
+    //function matrizMultiplicax3 (array){
+     //   return array.map(item =>{
+       //     return item.map (data =>{
+       //         return
+        //    })
+       // })
+    //}

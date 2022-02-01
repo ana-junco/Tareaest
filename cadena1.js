@@ -2,17 +2,6 @@
 //utilice reduce para encontrar el producto de sus elementos,
 //resultado esperado: 720
 
-matrizReduce = [[ 1, 2, 3 ],[ 4, 5 ],[ 6 ]];
-var integrado = matrizReduce.reduce(function(a,b) {
-    return a.concat(b);
-});
-//Multiplicar los valores de un array
-var total = integrado.reduce(function(a, b){
-    return a * b;
-    });
-console.log ("El resultado obtenido es:", total);
-
-
 const array1= [1, 2, 3, 4];
 const x2 = array1. reduce ((ac, va) =>{
     return ac + va;
@@ -58,40 +47,33 @@ function numerosMayorq10(array){
         return data > 10;
     })
 }
-console.log(numeroMayorq10(goodInput));
+console.log(numerosMayorq10(goodInput));
 
 //1) Verificar si una de las cadenas de caracteres del array
-
 //tiene más de 10 caracteres
-
-const vectorCadenas = ["Ecuador", "Argentina", "Dinamarca","Coreal del Norte"];
-
-
+//const vectorCadenas = ["Ecuador", "Argentina", "Dinamarca","Coreal del Norte"];
 
 //2) Chequear si uno de los elementos de la matriz es true
 
-const vectorBooleano = [
-
-    [false, false, false],
-
-    [false, false, false],
-
-    [false, false, true]
-
-  ];
-
-
+//const vectorBooleano = [
+    //[false, false, false],
+//[false, false, false],
+//[false, false, true]
+//]; 
 
 //3) verificar si la palabra 'Lost' existe dentro del siguiente array:
 
-const vectorParrafo = [
-
-    "Strange is the night where black stars rise,",
-
-    "And strange moons circle through the skies,",
-
-    "But stranger still is",
-
-    "Lost Carcosa."
-
+//const vectorParrafo = [
+   // "Strange is the night where black stars rise,",
+    //"And strange moons circle through the skies,",
+    //"But stranger still is",
+    //"Lost Carcosa."
+  //];
+  var vectorParrafo = ["Strange is the night where black stars rise,","Lost", "And strange moons circle through the skies,",
+  "But stranger Lost still is","Lost Carcosa."
   ];
+if(vectorParrafo.includes("Lost")){
+  console.log("Si esta la palabra Lost");
+}else{
+  console.log("No esta la palabra Lost");
+}

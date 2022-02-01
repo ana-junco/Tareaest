@@ -43,16 +43,20 @@ console.log(soloVocales("Pérez"));
 //Entrada: ["amalgam", "zoom", "casa", "jinete", "iglesia"]
 //Salida; ["amalgam", "zoom", "casa"]
 
-entrada = ["amalgam", "zoom", "casa", "jinete", "iglesia"];
+entrada = ["amalgam", "zoom", "casa", "jinete", "iglesia", "Panama", "Ecuador"];
 
-function VocalesIguales(array){
-    array. filter (data => {
-        
+function palabrasMismaVocal(array){
+    return array. filter (data => {
         
         const strvocales = soloVocales(data);
-        console.log(strvocales);
+        //console.log(strvocales);
+       return  strvocales.split("").every((item, index, array) => {
+            //console.log(item);
+            return item== array[0];
+        })
        
     })
 }
 
-VocalesIguales(entrada);
+const x1= palabrasMismaVocal(entrada);
+console.log(x1);
