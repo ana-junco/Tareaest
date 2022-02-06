@@ -51,15 +51,30 @@ console.log(numerosMayorq10(goodInput));
 
 //1) Verificar si una de las cadenas de caracteres del array
 //tiene más de 10 caracteres
-//const vectorCadenas = ["Ecuador", "Argentina", "Dinamarca","Coreal del Norte"];
+
+const vectorCadenas = ["Ecuador", "Argentina", "Dinamarca","Coreal del Norte"];
+function cadenMayorq10(array){
+  return array.some (item => item.length>10) 
+}
+console.log(cadenMayorq10(vectorCadenas));
 
 //2) Chequear si uno de los elementos de la matriz es true
 
-//const vectorBooleano = [
-    //[false, false, false],
-//[false, false, false],
-//[false, false, true]
-//]; 
+const vectorBooleano = [
+  [false, false, false],
+[false, false, false],
+[false, false, true]
+]; 
+
+function existeVerdaderoMatriz(matriz){
+  return matriz.some (element =>{
+    console.log (element)
+    return false;
+  })
+}
+console.log ("Ejercicio matriz de booleanos: ");
+console.log(existeVerdaderoMatriz(vectorBooleano));
+
 
 //3) verificar si la palabra 'Lost' existe dentro del siguiente array:
 
