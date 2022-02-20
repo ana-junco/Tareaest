@@ -1,0 +1,4 @@
+Calificación shift rigth: 2.4 /3
+
+La función utiliza números fijos en los índices del array, es decir, que si se aumenta otro elemento al array, ya no funciona
+
